@@ -6,7 +6,7 @@ function TicketList(props) {
   return(
     <React.Fragment>
       <hr/>
-      {Object.values(props.ticketList).map((ticket) =>
+      {Object.values(props.ticketList).map((ticket) => 
         <Ticket 
           whenTicketClicked = { props.onTicketSelection }
           names={ticket.names}
@@ -15,7 +15,7 @@ function TicketList(props) {
           formattedWaitTime={ticket.formattedWaitTime}
           id = {ticket.id}
           key={ticket.id}/>
-      )}
+)}
     </React.Fragment>
   );
 }
